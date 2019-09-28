@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserListView" customModule="SearchGithubUserProject" customModuleProvider="target">
+            <connections>
+                <outlet property="searchButton" destination="0CB-wv-UEH" id="gsW-xp-xe3"/>
+                <outlet property="searchTextField" destination="zcS-75-4Wk" id="4Ga-h7-Dvl"/>
+                <outlet property="userListCollectionView" destination="Ygc-wz-fiH" id="FxB-Cr-S8J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="609" height="703"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcS-75-4Wk">
+                    <rect key="frame" x="20" y="64" width="519" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B6W-95-5JJ"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CB-wv-UEH">
+                    <rect key="frame" x="549" y="44" width="50" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="8XQ-4K-kIo"/>
+                        <constraint firstAttribute="width" constant="50" id="Lyy-ag-TSN"/>
+                    </constraints>
+                    <state key="normal" title="검색"/>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-wz-fiH">
+                    <rect key="frame" x="10" y="114" width="589" height="545"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="cy0-lt-b4x">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ygc-wz-fiH" secondAttribute="trailing" constant="10" id="EyL-D2-HFw"/>
+                <constraint firstItem="0CB-wv-UEH" firstAttribute="leading" secondItem="zcS-75-4Wk" secondAttribute="trailing" constant="10" id="LWd-0i-vei"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0CB-wv-UEH" secondAttribute="trailing" constant="10" id="N6z-iu-lkE"/>
+                <constraint firstItem="0CB-wv-UEH" firstAttribute="centerY" secondItem="zcS-75-4Wk" secondAttribute="centerY" id="PEK-2I-fsf"/>
+                <constraint firstItem="Ygc-wz-fiH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="RMf-S0-fN5"/>
+                <constraint firstItem="Ygc-wz-fiH" firstAttribute="top" secondItem="zcS-75-4Wk" secondAttribute="bottom" constant="10" id="UJF-Xx-4Xx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ygc-wz-fiH" secondAttribute="bottom" constant="10" id="seJ-CS-epU"/>
+                <constraint firstItem="zcS-75-4Wk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xgJ-2S-VGY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="zcS-75-4Wk" secondAttribute="top" constant="-20" id="zp0-k8-mm8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-403.62318840579712" y="-209.26339285714286"/>
+        </view>
+    </objects>
+</document>
